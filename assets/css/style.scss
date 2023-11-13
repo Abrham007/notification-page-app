@@ -1,0 +1,233 @@
+@use "topography";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #f7fafd;
+  --color2: #fff;
+  --color3: #5e6778;
+  --color4: #0a327b;
+  --color5: #1c202b;
+  --color6: #939cad;
+  --color7: #e5effa;
+}
+
+@mixin custom-media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Plus Jakarta Sans;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 730px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  background: var(--color2);
+  box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
+
+  @include custom-media(750px) {
+    width: 90vw;
+    padding: 24px 16px;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--color5);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 24px;
+    font-weight: 800;
+
+    @include custom-media(750px) {
+      font-size: 20px;
+    }
+  }
+
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 25px;
+    border-radius: 6px;
+    background: var(--color4);
+    color: var(--color2);
+  }
+
+  &__btn {
+    color: var(--color3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color4);
+    }
+  }
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  &__img {
+    width: 45px;
+    height: 45px;
+
+    @include custom-media(750px) {
+      width: 39px;
+      height: 39px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    color: var(--color5);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 800;
+    flex-shrink: 0;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color4);
+    }
+  }
+
+  &__action {
+    color: var(--color3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 500;
+    flex-shrink: 0;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+  }
+
+  &__post {
+    color: var(--color3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 800;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color4);
+    }
+  }
+
+  &__group {
+    color: var(--color4);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 800;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+  }
+
+  &__message {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dde7ee;
+    background: var(--color7);
+    padding: 17px 20px 20px 20px;
+    color: var(--color3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 13px;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__elapsed-time {
+    color: var(--color6);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+    }
+  }
+
+  &__posted-img {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    margin-left: auto;
+
+    @include custom-media(750px) {
+      font-size: 14px;
+      width: 39px;
+      height: 39px;
+    }
+  }
+}

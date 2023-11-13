@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/notification-page-app/static/js/main.5960fcd3.js",
+    "index.html": "/notification-page-app/index.html",
+    "main.5960fcd3.js.map": "/notification-page-app/static/js/main.5960fcd3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5960fcd3.js"
+  ]
+}
