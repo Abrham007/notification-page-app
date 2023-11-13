@@ -11,11 +11,12 @@
   --color4: #0a327b;
   --color5: #1c202b;
   --color6: #939cad;
+  --color7: #e5effa;
 }
 
 .page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +32,12 @@
   border-radius: 15px;
   background: var(--color2);
   box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
+}
+@media screen and (max-width: 750px) {
+  .main {
+    width: 100vw;
+    padding: 24px 16px;
+  }
 }
 
 .header {
@@ -58,10 +65,18 @@
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-weight: 500;
+  border: none;
+  background-color: transparent;
 }
 .header__btn:hover {
   cursor: pointer;
   color: var(--color4);
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .item {
@@ -78,15 +93,12 @@
   flex-direction: column;
   gap: 4px;
 }
-.item__text {
-  display: flex;
-  gap: 7px;
-}
 .item__name {
   color: var(--color5);
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-weight: 800;
+  flex-shrink: 0;
 }
 .item__name:hover {
   cursor: pointer;
@@ -97,6 +109,7 @@
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-weight: 500;
+  flex-shrink: 0;
 }
 .item__post {
   color: var(--color3);
@@ -108,14 +121,40 @@
   cursor: pointer;
   color: var(--color4);
 }
-.item__live-dot {
-  margin: 5px;
+.item__group {
+  color: var(--color4);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 800;
+}
+.item__message {
+  width: 100%;
+  height: 97px;
+  border-radius: 5px;
+  border: 1px solid #dde7ee;
+  background: var(--color7);
+  padding: 17px 20px 20px 20px;
+  color: var(--color3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+.item__message:hover {
+  cursor: pointer;
 }
 .item__elapsed-time {
   color: var(--color6);
   font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-weight: 500;
+}
+.item__posted-img {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

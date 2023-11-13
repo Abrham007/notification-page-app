@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Abrham007/notifications-page.git)
-- Live Site URL: [live site URL](https://abrham007.github.io/notifications-page/)
+- Solution URL: [solution URL](https://github.com/Abrham007/notifications-page-app.git)
+- Live Site URL: [live site URL](https://abrham007.github.io/notifications-page-app/)
 
 ## My process
 

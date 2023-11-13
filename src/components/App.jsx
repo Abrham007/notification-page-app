@@ -1,10 +1,10 @@
 import React from "react";
 import Item from "./Item";
-import notificatins from "../../../notifications.json";
+import notificatins from "../notifications.json";
 
 function App() {
   return (
-    <div>
+    <div className="item-container">
       {notificatins.map((notificatin, index) => (
         <Item
           key={index}
