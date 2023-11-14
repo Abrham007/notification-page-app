@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Abrham007/notifications-page-app.git)
-- Live Site URL: [live site URL](https://abrham007.github.io/notifications-page-app/)
+- Solution URL: [solution URL](https://github.com/Abrham007/notification-page-app.git)
+- Live Site URL: [live site URL](https://abrham007.github.io/notification-page-app/)
 
 ## My process
 
@@ -33,7 +33,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- React
 
 ## Author
 
